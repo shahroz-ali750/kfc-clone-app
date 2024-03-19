@@ -1,0 +1,49 @@
+.header {
+  background-color: #000000;
+  padding: 35px 30px;
+}
+.header .delivery-btn {
+  background: none;
+  border: 2px solid #ea002a;
+  border-radius: 5px;
+  background-color: #1c1816;
+
+  img {
+    height: 30px;
+    padding: 3px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+}
+.header .pickup-btn {
+  background-color: #1c1816;
+
+  border-radius: 5px;
+
+  img {
+    height: 30px;
+    padding: 3px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+}
+.header .cart {
+  a {
+    padding: 7px;
+    text-decoration: none;
+    background-color: #ea002a;
+    color: whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+  }
+}
