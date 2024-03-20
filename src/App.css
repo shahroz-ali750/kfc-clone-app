@@ -1,4 +1,6 @@
 .header {
+  display: flex;
+  justify-content: space-between;
   background-color: #000000;
   padding: 35px 30px;
 }
@@ -35,7 +37,9 @@
 }
 .header .cart {
   a {
-    padding: 7px;
+    min-width: 64px;
+    padding: 6px;
+
     text-decoration: none;
     background-color: #ea002a;
     color: whitesmoke;
@@ -45,5 +49,26 @@
     border-radius: 3px;
     line-height: 1.75;
     letter-spacing: 0.02857em;
+  }
+}
+.meal-1 {
+  background-color: #1c1816;
+  display: inline-block;
+  img {
+    height: 150px;
+  }
+  h6 {
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+.meal-2 {
+  background-color: #1c1816;
+  display: inline-block;
+  img {
+    height: 150px;
+  }
+  h6 {
+    color: whitesmoke;
   }
 }

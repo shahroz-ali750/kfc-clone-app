@@ -34,7 +34,7 @@ export default function Header() {
       <div>
         <div class="cart">
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/bucket-filled.svg"}
+            src={process.env.PUBLIC_URL + "/assets/images/bucket-filled.png"}
             alt=""
           />
           <Link>login</Link>
