@@ -68,8 +68,10 @@
 .meal-1 {
   background-color: #1c1816;
   display: inline-block;
+  border-radius: 50% 50% 3% 50%;
+  text-align: center;
   img {
-    height: 150px;
+    width: 180px;
   }
   h6 {
     color: whitesmoke;
@@ -79,10 +81,96 @@
 .meal-2 {
   background-color: #1c1816;
   display: inline-block;
+  border-radius: 50% 50% 3% 50%;
+  text-align: center;
   img {
-    height: 150px;
+    width: 180px;
   }
   h6 {
     color: whitesmoke;
   }
+}
+
+.best-seller {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+  .krunch-burger {
+    background-color: #1c1816;
+    height: 370px;
+    display: flex;
+    position: relative;
+    align-items: end;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    h6 {
+      color: #fff;
+      color: var(--white);
+      cursor: pointer;
+      font-family: National2CondensedBold;
+      font-family: var(--theam-font);
+      font-size: 23px;
+      left: 18px;
+      position: absolute;
+      top: 16%;
+      transform: translateY(-50%);
+    }
+    img {
+      display: flex;
+      width: 290px;
+    }
+  }
+}
+.kfc-box {
+  display: flex;
+  gap: 7px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  z-index: 9;
+}
+.kfc-box span {
+  background-color: #ea002a;
+  /* background-color: var(--theam); */
+  border-radius: 0 0 1px 1px;
+  height: 22px;
+  width: 15px;
+}
+.wdp-ribbon {
+  background-color: #ea002a !important;
+  border-radius: 0.25em;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 800;
+  height: 28px;
+  line-height: 24px;
+  padding: 2px 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  top: 80px;
+  vertical-align: initial;
+  white-space: nowrap;
+  width: 80px;
+}
+.wdp-ribbon-two:before {
+  border-color: #ea002a;
+  border-left-color: #0000 !important;
+  left: -9px;
+}
+.wdp-ribbon-two:before {
+  border-width: 9px;
+  border-bottom: 14px solid #0000;
+  border-left: 8px solid #0000;
+  border-right: 8px solid #ea002a;
+  border-top: 14px solid #0000;
+  content: "";
+  display: inline-block;
+  left: -14px;
+  position: absolute;
+  top: 0;
 }
