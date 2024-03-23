@@ -6,11 +6,11 @@ export default function FoodMenu() {
     <div className="bg-black">
       <div className="container">
         <div>
-          <h2 className=" text-white items-title ">
+          <h2 className=" text-white items-title py-3 ">
             <span>Explore Menu</span>
           </h2>
         </div>
-        <div className="meal-1">
+        <div className="meal-1 p-3">
           <Link>
             <img
               className="img-fluid"
@@ -21,7 +21,7 @@ export default function FoodMenu() {
           <h6>Everyday Value</h6>
         </div>
 
-        <div className="meal-2 ms-2">
+        <div className="meal-2 ms-2 p-3">
           <Link>
             <img
               className="img-fluid"
