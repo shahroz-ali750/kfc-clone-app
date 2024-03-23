@@ -5,8 +5,11 @@ export default function FoodMenu() {
   return (
     <div className="bg-black">
       <div className="container">
-        <h1 className="text-white">Explore Menu</h1>
-
+        <div>
+          <h2 className=" text-white items-title ">
+            <span>Explore Menu</span>
+          </h2>
+        </div>
         <div className="meal-1">
           <Link>
             <img
