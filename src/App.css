@@ -261,3 +261,40 @@
     text-transform: uppercase;
   }
 }
+.footer {
+  background-color: #1c1816;
+}
+.social-container {
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+  .social-icons {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+  }
+  .social-icons a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+  }
+}
+.footer-line {
+  background-color: #fff;
+  /* background-color: var(--white) f; */
+  height: 40px;
+  width: 1px;
+}
+.footer-info {
+  a {
+    text-decoration: none;
+  }
+  li {
+    color: #fff;
+    font-size: 18px;
+    list-style: none;
+    margin-top: 10px;
+    transition: all 0.3s;
+  }
+}
