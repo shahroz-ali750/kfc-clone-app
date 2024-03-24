@@ -4,11 +4,9 @@ export default function BestSeller() {
   return (
     <div className="bg-black">
       <div className="container">
-        <div>
-          <h2 className="py-4">
-            <span className=" text-white text-uppercase">Best Sellers</span>
-          </h2>
-        </div>
+        <h2 className="py-4 text-uppercase text-white items-title">
+          Best Sellers
+        </h2>
         <div className="best-seller">
           <div className="krunch-burger">
             <div className="kfc-box">
