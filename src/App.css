@@ -229,3 +229,35 @@
     content: "\ea13";
   }
 }
+.kfc-basket {
+  align-items: center;
+  aspect-ratio: 566 / 350;
+  background-color: #1c1816;
+
+  border-radius: 10px;
+  box-shadow: 0 34.5333px 103.6px -8.63333px #0000000f;
+  display: flex;
+  flex-basis: 47.8%;
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 37rem;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-inline: 10px;
+  text-align: center;
+  button {
+    background-color: #ea002a;
+
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px 38px;
+    text-transform: uppercase;
+  }
+}
