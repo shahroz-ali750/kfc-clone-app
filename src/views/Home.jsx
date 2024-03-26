@@ -12,11 +12,15 @@ export default function Home() {
     <>
       <Header />
       <Banner />
-      <FoodMenu/>
-      <BestSeller/>
-      <TopDeals/>
-      <OnlineOrder/>
-      <Footer />
+      <section class="content">
+        <div class="container">
+          <FoodMenu />
+          <BestSeller />
+          <TopDeals />
+          <OnlineOrder />
+        </div>
+        <Footer />
+      </section>
     </>
   );
 }

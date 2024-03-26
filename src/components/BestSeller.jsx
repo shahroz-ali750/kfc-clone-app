@@ -2,12 +2,10 @@ import React from "react";
 
 export default function BestSeller() {
   return (
-    <div className="bg-black">
+    <section className="">
       <div className="container">
-        <h2 className="py-4 text-uppercase text-white items-title">
-          Best Sellers
-        </h2>
-        <div className="best-seller">
+        <h2 className=" text-uppercase text-white items-title">Best Sellers</h2>
+        <div className="best-seller my-4">
           <div className="krunch-burger">
             <div className="kfc-box">
               <span></span>
@@ -83,6 +81,6 @@ export default function BestSeller() {
         </div>
         <div></div>
       </div>
-    </div>
+    </section>
   );
 }

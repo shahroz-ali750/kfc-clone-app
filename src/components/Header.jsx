@@ -5,9 +5,56 @@ export default function Header() {
   return (
     <div className="header">
       <div>
-        <button>
+        <button
+          class="btn btn-light"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling">
           <i class="bi bi-list"></i>
         </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="false"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <Link
+              style={{
+                textDecorationLine: "none",
+                backgroundColor: "#ea002a",
+                color: "white",
+                padding: "0px 9px 0px 9px",
+                borderRadius: "5px",
+              }}
+              to={""}>
+              <h4>login</h4>
+            </Link>
+
+            {/* <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+              Offcanvas with body scrolling
+            </h5> */}
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <hr />
+          <div class="offcanvas-body">
+            <ul>
+              <li >
+                <Link>Store Locator</Link>
+              </li>
+              <li>Track Order</li>
+              <li>Explore Menu</li>
+            </ul>
+          </div>
+        </div>
+
         <Link>
           <img
             className="ms-2"

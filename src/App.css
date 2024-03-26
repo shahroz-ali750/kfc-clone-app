@@ -1,3 +1,16 @@
+/* // Default theme */
+@import "@splidejs/react-splide/css";
+
+/* // or other themes */
+@import "@splidejs/react-splide/css/skyblue";
+@import "@splidejs/react-splide/css/sea-green";
+
+/* // or only core styles */
+@import "@splidejs/react-splide/css/core";
+
+.content {
+  background-color: #000000;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -39,7 +52,6 @@
   a {
     min-width: 64px;
     padding: 6px;
-
     text-decoration: none;
     background-color: #ea002a;
     color: whitesmoke;
@@ -54,7 +66,7 @@
 .items-title {
   color: #fff;
   font-weight: 600;
-  padding-top: 40px;
+  padding-top: 20px;
   position: relative;
   text-transform: uppercase;
 }
@@ -63,6 +75,7 @@
   content: "";
   height: 3px;
   left: 0;
+  margin-top: 5px;
   position: absolute;
   top: 100%;
   width: 60px;
@@ -74,26 +87,13 @@
   border-radius: 50% 50% 3% 50%;
   text-align: center;
   img {
-    width: 180px;
-  }
-  h6 {
-    color: whitesmoke;
-    text-align: center;
-  }
-}
-.meal-2 {
-  background-color: #1c1816;
-  display: inline-block;
-  border-radius: 50% 50% 3% 50%;
-  text-align: center;
-  img {
+    height: 180px;
     width: 180px;
   }
   h6 {
     color: whitesmoke;
   }
 }
-
 .best-seller {
   display: flex;
   gap: 20px;
@@ -111,8 +111,6 @@
       color: #fff;
       color: var(--white);
       cursor: pointer;
-      font-family: National2CondensedBold;
-      font-family: var(--theam-font);
       font-size: 23px;
       left: 18px;
       position: absolute;
