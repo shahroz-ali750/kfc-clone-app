@@ -87,13 +87,24 @@
   border-radius: 50% 50% 3% 50%;
   text-align: center;
   img {
-    height: 180px;
+    height: 150px;
     width: 180px;
+    transition: all 0.3s;
   }
   h6 {
     color: whitesmoke;
   }
+  .round-design {
+    background-color: #000;
+    border-radius: 50%;
+    bottom: 5px;
+    height: 17px;
+    position: absolute;
+    right: 25px;
+    width: 17px;
+  }
 }
+
 .best-seller {
   display: flex;
   gap: 20px;
@@ -109,7 +120,6 @@
     padding-bottom: 10px;
     h6 {
       color: #fff;
-      color: var(--white);
       cursor: pointer;
       font-size: 23px;
       left: 18px;
@@ -134,7 +144,6 @@
 }
 .kfc-box span {
   background-color: #ea002a;
-  /* background-color: var(--theam); */
   border-radius: 0 0 1px 1px;
   height: 22px;
   width: 15px;
@@ -163,7 +172,7 @@
   border-left-color: #0000 !important;
   left: -9px;
 }
-.wdp-ribbon-two:before {
+/* .wdp-ribbon-two:before {
   border-width: 9px;
   border-bottom: 14px solid #0000;
   border-left: 8px solid #0000;
@@ -174,7 +183,7 @@
   left: -14px;
   position: absolute;
   top: 0;
-}
+} */
 
 .top-deals {
   padding: 10px;

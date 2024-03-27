@@ -22,7 +22,7 @@ export default function FoodMenu() {
               <FoodItems img={"signature-boxes"} itemName={"Signature-boxes"} />
             </SplideSlide>
             <SplideSlide>
-              <FoodItems img={"family-festival-3"} itemName={"Sharing"} />
+              <FoodItems img={"sharing"} itemName={"Sharing"} />
             </SplideSlide>
             <SplideSlide>
               <FoodItems img={"snack-bucket"} itemName={"Snacks-&-Beverages"} />

@@ -12,11 +12,12 @@ export default function FoodItems(props) {
         />
       </Link>
       <h6>{props.itemName}</h6>
+      <span className="round-design"></span>
       <div
         style={{
           display: "inline-block",
-          borderBottom: "3px solid red",
-          width: "55px",
+          borderBottom: "2px ,solid, #ea002a",
+          width: "50px",
           borderRadius: "5px",
           marginBottom: "10px",
         }}></div>
