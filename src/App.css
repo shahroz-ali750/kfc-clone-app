@@ -7,22 +7,85 @@
 
 /* // or only core styles */
 @import "@splidejs/react-splide/css/core";
+/* @font-face { */
+/* font-family: "Roboto"; */
+/* src: url('Roboto-ThinItalic-webfont.eot'); */
+/* src: url("Roboto-ThinItalic-webfont.eot?#iefix") format("embedded-opentype"), */
+/* url('Roboto-ThinItalic-webfont.woff') format('woff'), */
+/* url("~/public/assets/fonts/Roboto-Black.ttf") format("truetype"); */
+/* url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License).  */
+/* font-weight: 200 */
+/* font-style: italic */
+/* } */
+ /* scrollBar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d2d2d2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 130px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .content {
   background-color: #000000;
 }
+/* side nav styling*/
+.side-nav {
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  a:hover {
+    background-color: darkgray;
+  }
+
+  li {
+    align-items: center;
+    display: flex;
+    gap: 7px;
+    list-style: none;
+    padding: 11px 10px;
+    font-size: 17px;
+    /* transition: all 0.2s; */
+
+    img {
+      width: 25px;
+    }
+  }
+}
+/* header styling */
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #000000;
-  padding: 35px 30px;
+  padding: 30px 30px;
+
+  button {
+    font-size: 28px;
+    padding-right: 15px;
+  }
 }
 .header .delivery-btn {
   background: none;
   border: 2px solid #ea002a;
   border-radius: 5px;
   background-color: #1c1816;
-
   img {
     height: 30px;
     padding: 3px;
@@ -35,9 +98,7 @@
 }
 .header .pickup-btn {
   background-color: #1c1816;
-
   border-radius: 5px;
-
   img {
     height: 30px;
     padding: 3px;
@@ -61,6 +122,7 @@
     border-radius: 3px;
     line-height: 1.75;
     letter-spacing: 0.02857em;
+    margin: 10px;
   }
 }
 .items-title {
@@ -86,10 +148,13 @@
   display: inline-block;
   border-radius: 50% 50% 3% 50%;
   text-align: center;
+  transition: all 0.4s;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
   img {
     height: 150px;
     width: 180px;
-    transition: all 0.3s;
   }
   h6 {
     color: whitesmoke;
@@ -100,11 +165,14 @@
     bottom: 5px;
     height: 17px;
     position: absolute;
-    right: 25px;
+    right: 5px;
     width: 17px;
   }
 }
-
+.meal-1:hover {
+  top: -15px;
+}
+/* best seller */
 .best-seller {
   display: flex;
   gap: 20px;
@@ -184,12 +252,19 @@
   position: absolute;
   top: 0;
 } */
+/* Top Deals */
+.zoom {
+  transition: all 0.4s; /* Animation */
+}
 
+.zoom:hover {
+  transform: scale(1.1);
+}
 .top-deals {
   padding: 10px;
-  background: #1c1816;
+  background-color: #1c1816;
   .kfc-price {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 0;
   }
@@ -205,8 +280,8 @@
     top: 5px;
   }
   .price-label {
-    bottom: -35px;
-    left: 50%;
+    bottom: -55px;
+    left: 52%;
     position: absolute;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -218,18 +293,25 @@
     text-transform: uppercase;
     white-space: nowrap;
   }
+
   .register-btn {
     align-items: center;
     background-color: #ea002a;
     /* background-color: var(--theam); */
     border-radius: 6px;
-    color: #fff !important;
+    color: whitesmoke;
     display: flex;
     font-weight: 600;
     margin-bottom: 10px;
     padding: 8px 10px;
     text-decoration: none;
     transition: all 0.4s;
+  }
+  .register-btn:hover {
+    background-color: whitesmoke;
+    color: #ea002a;
+    border: 2px solid #ea002a;
+    font-weight: 600px;
   }
 
   .ri-add-line:before {
@@ -269,7 +351,19 @@
   }
 }
 .footer {
+  padding: 50px;
+  margin-top: 50px;
   background-color: #1c1816;
+  .links {
+    display: flex;
+    gap: 10px;
+  }
+  .link-design i {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 7px 10px;
+    font-size: 26px;
+  }
 }
 .social-container {
   flex-wrap: wrap;
@@ -280,16 +374,15 @@
     display: flex;
     gap: 15px;
   }
-  .social-icons a {
+  /* .social-icons a {
     align-items: center;
     display: flex;
     justify-content: center;
     font-size: 26px;
-  }
+  } */
 }
 .footer-line {
   background-color: #fff;
-  /* background-color: var(--white) f; */
   height: 40px;
   width: 1px;
 }
@@ -300,8 +393,13 @@
   li {
     color: #fff;
     font-size: 18px;
+    font-weight: 500;
     list-style: none;
     margin-top: 10px;
     transition: all 0.3s;
+  }
+  li:hover {
+    /* background-color: #e41837; */
+    color: #ea002a;
   }
 }

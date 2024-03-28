@@ -14,8 +14,7 @@ export default function OnlineOrder() {
             />
           </Link>
         </div>
-        <div className="col-12 col-md-6 col-lg-6 mt-4">
-          /
+        <div className="col-12 col-md-6 col-lg-6 mt-5">
           <Link>
             <img
               className="img-fluid rounded rounded-4"

@@ -16,7 +16,7 @@ export default function FoodItems(props) {
       <div
         style={{
           display: "inline-block",
-          borderBottom: "2px ,solid, #ea002a",
+          borderBottom: "2px solid #ea002a",
           width: "50px",
           borderRadius: "5px",
           marginBottom: "10px",

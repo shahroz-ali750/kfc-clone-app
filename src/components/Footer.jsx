@@ -3,31 +3,40 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="footer p-5">
+    <section className="footer">
       <div className="container">
-        <div className="social-container">
-          <div className="text-center">
+        <div className="row justify-content-center mb-3">
+          <div className="col-12 col-md-6 text-end ">
             <img
               src={process.env.PUBLIC_URL + "/assets/images/logo192.png"}
               alt=""
             />
           </div>
-          {/* <div className="footer-line"></div> */}
-          {/* <div class="social-icons">
-            <Link
-              to="https://www.youtube.com/channel/UCg4hfdWApV0Uea6aFW7PZUg"
-              target="blank">
-              <i class="bi bi-youtube"></i>
-            </Link>
-            <Link
-              to="https://www.instagram.com/kfcpakistanofficial/?hl=en"
-              target="blank">
-              <i class="bi bi-instagram"></i>
-            </Link>
-            <Link to="https://www.facebook.com/KFCPakistan/" target="blank">
-              <i class="bi bi-facebook"></i>
-            </Link>
-          </div> */}
+          <div className="col-12 col-md-6 justify-content-start">
+            <div class="links">
+              <div className="link-design">
+                <Link
+                  to="https://www.youtube.com/channel/UCg4hfdWApV0Uea6aFW7PZUg"
+                  target="blank">
+                  <i class="bi bi-youtube text-danger"></i>
+                </Link>
+              </div>
+              <div className="link-design">
+                <Link
+                  to="https://www.instagram.com/kfcpakistanofficial/?hl=en"
+                  target="blank">
+                  <i class="bi bi-instagram text-black"></i>
+                </Link>
+              </div>
+              <div className="link-design">
+                <Link to="https://www.facebook.com/KFCPakistan/" target="blank">
+                  <i class="bi bi-facebook"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="social-container">
           <div className="row">
             <div class="col-12 col-md-3 col-lg-3">
               <ul class="footer-info">
@@ -96,10 +105,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div class="powerd-by kfc-all-rights mt-2 d-flex justify-content-between align-items-end">
-          <h6 class="m-0 text-white">2023 KFC. All rights reserved</h6>
-        </div>
+      <div class="powerd-by kfc-all-rights mt-2 d-flex justify-content-between align-items-end">
+        <h6 class="m-0 text-white">2023 KFC. All rights reserved</h6>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }
